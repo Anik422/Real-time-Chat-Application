@@ -20,19 +20,44 @@
     },
     {
       "email": "aniks4222@gmail.com",
-      "password": "$2a$10$0F/igNlfkANgOOgfIcITPOhMI5sDY57eSSMYK4Qaop6/RJtBzWDqy",
-      "name": "Anik Saha",
+      "password": "$2a$10$jCmeX9cQyoMwByLoWe0VUu0wHyg2l57TUijgHqkBKsaAskxHaVAPC",
+      "name": "Anik Saha 4222",
       "id": 4
+    },
+    {
+      "email": "aniks4232@gmail.com",
+      "password": "$2a$10$bq9HKTBx/kOR1MFCQHUUUOQucjpgjVhsCqr5YgEEiyvYBJAo3gIny",
+      "name": "Anik Saha",
+      "id": 5
     }
   ],
   "conversations": [
     {
-      "participants": "aniks422@gmail.com-saad@learnwithsumit.com",
+      "participants": "akash@learnwithsumit.com-aniks422@gmail.com",
       "users": [
         {
+          "email": "akash@learnwithsumit.com",
+          "name": "Akash Ahmed",
+          "id": 2
+        },
+        {
           "email": "aniks422@gmail.com",
+          "password": "$2a$10$R2tAWhOH9x3v00lx/.PRguEs6TmxwdPGMS1jYWocH3qlKxQkfhuJy",
           "name": "Anik Saha",
           "id": 1
+        }
+      ],
+      "message": "hello",
+      "timestamp": 1751200166881,
+      "id": 1
+    },
+    {
+      "participants": "akash@learnwithsumit.com-saad@learnwithsumit.com",
+      "users": [
+        {
+          "email": "akash@learnwithsumit.com",
+          "name": "Akash Ahmed",
+          "id": 2
         },
         {
           "email": "saad@learnwithsumit.com",
@@ -41,55 +66,73 @@
           "id": 3
         }
       ],
-      "message": "koi",
-      "timestamp": 1750854513483,
-      "id": 1
+      "message": "hello vaiya",
+      "timestamp": 1751200310053,
+      "id": 2
     },
     {
-      "participants": "aniks422@gmail.com-aniks4222@gmail.com",
+      "participants": "aniks4222@gmail.com-akash@learnwithsumit.com",
       "users": [
         {
-          "email": "aniks422@gmail.com",
-          "name": "Anik Saha",
-          "id": 1
+          "email": "aniks4222@gmail.com",
+          "name": "Anik Saha 4222",
+          "id": 4
         },
         {
-          "email": "aniks4222@gmail.com",
-          "password": "$2a$10$0F/igNlfkANgOOgfIcITPOhMI5sDY57eSSMYK4Qaop6/RJtBzWDqy",
-          "name": "Anik Saha",
-          "id": 4
+          "email": "akash@learnwithsumit.com",
+          "password": "$2a$10$UmPO8mxdQosV4ejSmI63rO5bpa22TZJka87.tg/g0BPY/ukauE/la",
+          "name": "Akash Ahmed",
+          "id": 2
         }
       ],
-      "message": "dfaf ",
-      "timestamp": 1750854801698,
-      "id": 2
+      "message": "akash@learnwithsumit.com",
+      "timestamp": 1751200519424,
+      "id": 3
+    },
+    {
+      "participants": "aniks4232@gmail.com-akash@learnwithsumit.com",
+      "users": [
+        {
+          "email": "aniks4232@gmail.com",
+          "name": "Anik Saha",
+          "id": 5
+        },
+        {
+          "email": "akash@learnwithsumit.com",
+          "password": "$2a$10$UmPO8mxdQosV4ejSmI63rO5bpa22TZJka87.tg/g0BPY/ukauE/la",
+          "name": "Akash Ahmed",
+          "id": 2
+        }
+      ],
+      "message": "aniks4232@gmail.comaniks4232@gmail.comaniks4232@gmail.com",
+      "timestamp": 1751200641876,
+      "id": 4
     }
   ],
   "messages": [
     {
       "conversationId": 1,
-      "message": "hello",
       "sender": {
+        "email": "akash@learnwithsumit.com",
+        "name": "Akash Ahmed",
+        "id": 2
+      },
+      "receiver": {
         "email": "aniks422@gmail.com",
+        "password": "$2a$10$R2tAWhOH9x3v00lx/.PRguEs6TmxwdPGMS1jYWocH3qlKxQkfhuJy",
         "name": "Anik Saha",
         "id": 1
       },
-      "receiver": {
-        "email": "saad@learnwithsumit.com",
-        "password": "$2a$10$jdcwiHnXZfP6CMiXukrA2eb4X7oVZEJT5S9YtusxksKXTQCKV.48O",
-        "name": "Saad Hasan",
-        "id": 3
-      },
-      "timestamp": 1750853982535,
+      "message": "hello",
+      "timestamp": 1751200166881,
       "id": 1
     },
     {
-      "conversationId": 1,
-      "message": "kemon aso",
+      "conversationId": 2,
       "sender": {
-        "email": "aniks422@gmail.com",
-        "name": "Anik Saha",
-        "id": 1
+        "email": "akash@learnwithsumit.com",
+        "name": "Akash Ahmed",
+        "id": 2
       },
       "receiver": {
         "email": "saad@learnwithsumit.com",
@@ -97,59 +140,43 @@
         "name": "Saad Hasan",
         "id": 3
       },
-      "timestamp": 1750854004112,
+      "message": "hello vaiya",
+      "timestamp": 1751200310053,
       "id": 2
     },
     {
-      "conversationId": 2,
-      "message": "anik vai",
+      "conversationId": 3,
       "sender": {
-        "email": "aniks422@gmail.com",
-        "name": "Anik Saha",
-        "id": 1
-      },
-      "receiver": {
         "email": "aniks4222@gmail.com",
-        "password": "$2a$10$0F/igNlfkANgOOgfIcITPOhMI5sDY57eSSMYK4Qaop6/RJtBzWDqy",
-        "name": "Anik Saha",
+        "name": "Anik Saha 4222",
         "id": 4
       },
-      "timestamp": 1750854029487,
+      "receiver": {
+        "email": "akash@learnwithsumit.com",
+        "password": "$2a$10$UmPO8mxdQosV4ejSmI63rO5bpa22TZJka87.tg/g0BPY/ukauE/la",
+        "name": "Akash Ahmed",
+        "id": 2
+      },
+      "message": "akash@learnwithsumit.com",
+      "timestamp": 1751200519424,
       "id": 3
     },
     {
-      "conversationId": 1,
+      "conversationId": 4,
       "sender": {
-        "email": "aniks422@gmail.com",
+        "email": "aniks4232@gmail.com",
         "name": "Anik Saha",
-        "id": 1
+        "id": 5
       },
       "receiver": {
-        "email": "saad@learnwithsumit.com",
-        "password": "$2a$10$jdcwiHnXZfP6CMiXukrA2eb4X7oVZEJT5S9YtusxksKXTQCKV.48O",
-        "name": "Saad Hasan",
-        "id": 3
+        "email": "akash@learnwithsumit.com",
+        "password": "$2a$10$UmPO8mxdQosV4ejSmI63rO5bpa22TZJka87.tg/g0BPY/ukauE/la",
+        "name": "Akash Ahmed",
+        "id": 2
       },
-      "message": "hello",
-      "timestamp": 1750854420631,
+      "message": "aniks4232@gmail.comaniks4232@gmail.comaniks4232@gmail.com",
+      "timestamp": 1751200641876,
       "id": 4
-    },
-    {
-      "conversationId": 2,
-      "sender": {
-        "email": "aniks422@gmail.com",
-        "name": "Anik Saha",
-        "id": 1
-      },
-      "receiver": {
-        "email": "aniks4222@gmail.com",
-        "password": "$2a$10$0F/igNlfkANgOOgfIcITPOhMI5sDY57eSSMYK4Qaop6/RJtBzWDqy",
-        "name": "Anik Saha",
-        "id": 4
-      },
-      "message": "dfaf ",
-      "timestamp": 1750854801698,
-      "id": 5
     }
   ]
 }

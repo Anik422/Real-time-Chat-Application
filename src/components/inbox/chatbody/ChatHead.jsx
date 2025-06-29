@@ -6,10 +6,10 @@ import { useSelector } from "react-redux";
 export default function ChatHead({ message = {} }) {
     const {user} = useSelector((state) => state.auth) || {};
     const { email, name } = user || {};
-    const { sender, recipient } = message;
+    const { sender, receiver } = message;
     const { email: senderEmail, name: senderName } = sender || {};
-    const partnerEmail = sender?.email === email ? recipient?.email : sender?.email;
-    const partnerName = sender?.name === name ? recipient?.name : sender?.name;
+    const partnerEmail = sender?.email === email ? receiver?.email : sender?.email;
+    const partnerName = sender?.name === name ? receiver?.name : sender?.name;
     return (
         <div className="relative flex items-center p-3 border-b border-gray-300">
             <img
