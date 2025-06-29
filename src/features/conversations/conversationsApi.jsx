@@ -43,6 +43,8 @@ export const conversationsApi = apiSlice.injectEndpoints({
 
                     });
                 } catch (error) { }
+                await cacheEntryRemoved;
+                socket.close(); // Close the socket connection when the cache entry is removed
             }
         }),
 
