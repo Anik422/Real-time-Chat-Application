@@ -1,5 +1,8 @@
 {
-  "name": "Real-time Chat Application",
+  "name": "real-time-chat-application",
+  "description": "A real-time chat application built with React, Redux, and Socket.IO",
+  "author": "Anik Saha",
+  "license": "MIT",
   "private": true,
   "version": "0.0.1",
   "type": "module",
