@@ -1,10 +1,10 @@
 {
-    "name": "lws-json-server-todos",
-    "description": "Example in memory todos api with json-server by Learn with Sumit",
+    "name": "json-server-todos",
+    "description": "Example in memory todos api with json-server and json-server-auth",
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon server.js"
+        "start": "node server.js"
     },
     "keywords": [],
     "author": "Learn with Sumit",

@@ -8,6 +8,11 @@ export const conversationsApi = apiSlice.injectEndpoints({
         getConversations: builder.query({
             query: (email) =>
                 `/conversations?participants_like=${email}&_sort=timestamp&_order=desc&_page=1&_limit=${import.meta.env.VITE_API_CONVERSATION_PER_PAGE}`,
+            transformResponse(apiResponse, meta) {
+                const totalCount = meta.response.headers.get("X-Total-Count");
+                console.log(totalCount);
+                return apiResponse;
+            },
             async onCacheEntryAdded(arg, { updateCachedData, cacheDataLoaded, cacheEntryRemoved }) {
                 //create a socket connection
                 const socket = io(import.meta.env.VITE_API_URL, {
@@ -46,6 +51,30 @@ export const conversationsApi = apiSlice.injectEndpoints({
                 await cacheEntryRemoved;
                 socket.close(); // Close the socket connection when the cache entry is removed
             }
+        }),
+
+        // Fetch More conversations for user
+        getMoreConversations: builder.query({
+            query: ({ email, page }) =>
+                `/conversations?participants_like=${email}&_sort=timestamp&_order=desc&_page=${page}&_limit=${import.meta.env.VITE_API_CONVERSATION_PER_PAGE}`,
+            async onQueryStarted({ email }, { queryFulfilled, dispatch }) {
+                try {
+                    const conversations = await queryFulfilled;
+                    if (conversations?.length > 0) {
+                        //update conversation cache pessimistically start
+                        dispatch(apiSlice.util.updateQueryData(
+                            "getConversations",
+                            email,
+                            (draft) => {
+                                return [...draft, ...conversations];
+                            }
+                        ));
+                    }
+                } catch (error) {
+                    console.error("Error editing conversation or dispatching message:", error);
+                }
+            },
+
         }),
 
         // Fetch specific conversation between two users
